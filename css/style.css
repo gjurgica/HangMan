@@ -1,0 +1,146 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 400;
+    line-height: 1.7;
+    background-size: cover;
+}
+.game{
+    background-color: #3f6c45;
+    height: 100vh;
+    padding: 2rem 0;
+}
+.choise{
+    background-color: #4897d8;
+    height: 100vh;
+    padding: 2rem 0;
+}
+h1{
+    text-align:center;
+    color: #f8a055;
+    font-size: 5rem;
+
+}
+.animation-box{
+    margin: 0 auto;
+    border: 0.5rem solid #cb0000; 
+    background-color: #e4ea8c;
+    width: 60rem;
+    height: 40rem;
+}
+.letters-box,
+.choise-box
+{
+    display: grid;
+    justify-items: center;
+    grid-gap: 0.5rem;
+    margin: 2rem 0;
+}
+.box{
+    width: 40rem;
+    padding: 3rem;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 2rem;
+}
+.movie,
+.autors
+{
+    background-color: #ffdb5c;
+    color: #4897d8;
+}
+.caracters,
+.book
+{
+    background-color: #fa6e59;
+    color: #ffdb5c;
+}
+.letter{
+    width: 4rem;
+    height: 4rem;
+    background-color: #e4ea8c;
+    color: #50312f;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.btn-div{
+    text-align: center;
+}
+.again-btn{
+    background-color: #cb0000;
+    color: #e4ea8c;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    font-weight: bolder;
+}
+.hidden-word{
+    font-size: 3rem;
+    text-align: center;
+}
+@media (max-width: 768px){
+    .choise,
+    .game
+    {
+        width: 100%;
+        height: 100vh;
+    }
+    .box{
+        width: 30rem;
+        margin: 1rem;
+    } 
+    .animation-box{
+        width: 80vw;
+    }
+    .hidden-word{
+        font-size: 2rem;
+    }
+    .letter{
+        font-size: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+.movie,
+.book
+{
+    background-color: #ffdb5c;
+    color: #4897d8;
+}
+.caracters,
+.autors
+{
+    background-color: #fa6e59;
+    color: #ffdb5c;
+}
+}
+@media (max-width: 1200px){
+    .choise,
+    .game
+    {
+        width: 100%;
+        height: 100vh;
+    }
+    .box{
+        width: 90vw;
+    } 
+}
