@@ -46,8 +46,8 @@ let servis = {
     },
     removingSelectedWord: function(word,arr){
         for(let i=0;i<arr.length;i++){
-            if(arr[i] === word){
-                arr.splice(arr[i],1);
+            if(arr[i].toUpperCase() === word.toUpperCase()){
+                arr.splice(i,1);
             }
         }
     },
@@ -70,7 +70,7 @@ inputs.chouseBox.addEventListener("click",function(e){
         servis.changeView();
         selectedWord = movies[Math.floor(Math.random()*movies.length)].toLocaleUpperCase();
         servis.makeUnderScore();
-        servis.removingSelectedWord(selectedWord,movies);
+        servis.removingSelectedWord(selectedWord.toString(),movies);
       
     }
     else if(e.target.value === "Characters"){
@@ -106,7 +106,6 @@ inputs.againBtn.addEventListener("click",function(){
         servis.enableAllBtn();
 });
 inputs.lettersBox.addEventListener("click",function(e){
-    console.log(selectedWord)
     if(e.target.value !== undefined){
         if(selectedWord.includes(e.target.value)){
             for(let i=0;i<selectedWord.length;i++){
@@ -118,7 +117,6 @@ inputs.lettersBox.addEventListener("click",function(e){
                     countChar --;
                 }
             }
-            console.log(countChar)
             if(countChar === 0){
                 inputs.hiddenDiv.innerHTML = `<h1>You Win</h1>`
                 servis.disabledAllBtn();
