@@ -47,7 +47,7 @@ let servis = {
     removingSelectedWord: function(word,arr){
         for(let i=0;i<arr.length;i++){
             if(arr[i] === word){
-                arr.splice(i,1);
+                arr.splice(arr[i],1);
             }
         }
     },
@@ -56,7 +56,12 @@ let servis = {
             letter.disabled = false;
             letter.style.backgroundColor = "#e4ea8c"; 
         }
-    }  
+    },
+    disabledAllBtn: function(){
+        for(letter of inputs.allLetters){
+            letter.disabled = true; 
+        }
+    } 
     
 }
 
@@ -97,9 +102,11 @@ inputs.againBtn.addEventListener("click",function(){
         inputs.animationBox.innerHTML = "";
         underscoreArr = [];
         wrongLetter = 0;
+        countChar = 0;
         servis.enableAllBtn();
 });
 inputs.lettersBox.addEventListener("click",function(e){
+    console.log(selectedWord)
     if(e.target.value !== undefined){
         if(selectedWord.includes(e.target.value)){
             for(let i=0;i<selectedWord.length;i++){
@@ -111,8 +118,10 @@ inputs.lettersBox.addEventListener("click",function(e){
                     countChar --;
                 }
             }
+            console.log(countChar)
             if(countChar === 0){
                 inputs.hiddenDiv.innerHTML = `<h1>You Win</h1>`
+                servis.disabledAllBtn();
             }
         }else{
                 wrongLetter ++;
