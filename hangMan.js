@@ -14,13 +14,19 @@ let play = true;
 let wrongLetter = 0;
 let countChar = 0;
 let movies = ["The Godfather"," The Shawshank Redemption","Schindler's List","Raging Bull","Casablanca","Citizen Kane",
-"Gone with the Wind","The Wizard of Oz","One Flew Over the Cuckoo's Nest","Lawrence of Arabia"];
+"Gone with the Wind","The Wizard of Oz","One Flew Over the Cuckoo's Nest","Lawrence of Arabia","The Silence of the Lambs",
+"Chinatown","Some Like It Hot","Apocalypse Now","Saving Private Ryan","A Clockwork Orange","The Treasure of the Sierra Madre",
+"The Good, the Bad and the Ugly","Jurassic Park","The Green Mile"];
 let characters = ["Atticus Finch","Buzz Lightyear","Captain America","Captain Jack Sparrow","Dirty Harry Callahan","Edward Scissorhands",
-"Forrest Gump","Freddy Krueger","Han Solo","Michael Corleone"];
+"Forrest Gump","Freddy Krueger","Han Solo","Michael Corleone","Edna Mode","Legolas","Wednesday Addams",
+"Inspector Clouseau","Groot","Withnail","Captain Kirk","Marge Gunderson","Hans Landa","Wolverine"];
 let books = ["Don Quixote","The Divine Comedy","The Adventures of Huckleberry Finn","Alice's Adventures in Wonderland","To the Lighthouse","Gulliver's Travels",
-" One Thousand and One Nights","David Copperfield","The Sun Also Rises","Death on the Nile"];
+" One Thousand and One Nights","David Copperfield","The Sun Also Rises","Death on the Nile","War and Peace",
+"One Hundred Years of Solitude ","The Catcher in the Rye ","The Sound and the Fury","Nineteen Eighty Four",
+"Great Expectations","The Grapes of Wrath","The Red and the Black","To Kill a Mockingbird","Midnight's Children"];
 let authors = ["Agatha Christie","William Shakespeare","Edgar Allan Poe","J. R. R. Tolkien","Mark Twain","Dante Alighieri",
-"Ernest Hemingway","Oscar Wilde","Jules Verne","Johann Wolfgang von Goethe"];
+"Ernest Hemingway","Oscar Wilde","Jules Verne","Johann Wolfgang von Goethe","Italo Calvino","Giovanni Boccaccio","Jalaluddin Muhammad Rumi","Arthur Rimbaud",
+"Julio Cortázar","Nazim Hikmet","Jean de La Fontaine","Hans Christian Andersen","Pablo Neruda"," Neil Gaiman"];
 inputs.gameDiv.style.display = "none";
 
 let servis = {
