@@ -91,7 +91,7 @@ inputs.chouseBox.addEventListener("click",function(e){
         servis.makeUnderScore();
         servis.removingSelectedWord(selectedWord,books);
     }
-    else if(e.target.value === "Autors"){
+    else if(e.target.value === "Authors"){
         servis.changeView();
         selectedWord = authors[Math.floor(Math.random()*authors.length)].toUpperCase();
         servis.makeUnderScore();
